@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="html5_homework:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/html5_homework_war</output-path>
+    <root id="archive" name="html5_homework_war.war">
+      <element id="artifact" artifact-name="html5_homework:war exploded" />
+    </root>
+  </artifact>
+</component>
