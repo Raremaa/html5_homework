@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2D转换</title>
+    <style type="text/css">
+        .box{
+            width: fit-content;
+            height: fit-content;
+            margin: 0 auto;
+            transform: scale(0.5,0.5);
+            -webkit-transform: scale(0.5,0.5);
+            -ms-transform: scale(0.5,0.5);
+            -moz-transform: scale(0.5,0.5);
+            -o-transform: scale(0.5,0.5);
+        }
+        .box2{
+            /*设置圆角矩形 加上边框*/
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -o-border-radius: 50%;
+            -ms-border-radius: 50%;
+            border: solid burlywood 3px;
+            transition: all 3s ease-out 0s;
+            -o-transition: all 3s ease-out 0s;
+            -ms-transition: all 3s ease-out 0s;
+            -moz-transition: all 3s ease-out 0s;
+            -webkit-transition: all 3s ease-out 0s;
+        }
+        .box2:hover{
+            border-radius: 0;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            -o-border-radius: 0;
+            -ms-border-radius: 0;
+            transform: scale(2,2) rotate(1080deg);
+            -o-transform: scale(2,2) rotate(1080deg) ;
+            -webkit-transform: scale(2,2) rotate(1080deg) ;
+            -ms-transform: scale(2,2) rotate(1080deg) ;
+            -moz-transform: scale(2,2) rotate(1080deg) ;
+            transition: all 3s ease-in 0s;
+            -o-transition: all 3s ease-in 0s;
+            -ms-transition: all 3s ease-in 0s;
+            -moz-transition: all 3s ease-in 0s;
+            -webkit-transition: all 3s ease-in 0s;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img class="box2" src="images/siamese.jpg">
+    </div>
+</body>
+</html>

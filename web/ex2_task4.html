@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animation属性</title>
+    <style type="text/css">
+        #btn{
+            width: 70px;
+            height: 70px;
+            font-size: 30px;
+            color: azure;
+            background: linear-gradient(to top,blue,dodgerblue 80%,white);
+            border-radius: 30px;
+            animation: myMove 1s linear infinite;
+            margin-top: 50px;
+            margin-left: 50%;
+        }
+        @keyframes myMove {
+            from{
+                box-shadow: green 0 0 10px 2px;
+            }
+            to{
+                box-shadow: red 0 0 10px 2px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <span id="btn">发光的按钮</span>
+</body>
+</html>

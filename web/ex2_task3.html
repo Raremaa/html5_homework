@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>了解@keyframes的使用方法。</title>
+    <style type="text/css">
+        .box{
+            width: 388px;
+            height: 431px;
+            margin: 0 auto;
+            position: absolute;
+            background: url("images/ballon.png");
+            animation: myMove 3s ease-in-out alternate running infinite;
+        }
+        @keyframes myMove {
+             from{
+                 top: 0%;
+             }
+             to{
+                 top: 100%;
+             }
+         }
+        @-moz-keyframes myMove {
+            from{
+                top: 0%;
+            }
+            to{
+                top: 100%;
+            }
+        }@-ms-keyframes myMove {
+            from{
+                top: 0%;
+            }
+            to{
+                top: 100%;
+            }
+        }@-o-keyframes myMove {
+            from{
+                top: 0%;
+            }
+            to{
+                top: 100%;
+            }
+        }@-webkit-keyframes myMove {
+            from{
+                top: 0%;
+            }
+            to{
+                top: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    </div>
+</body>
+</html>

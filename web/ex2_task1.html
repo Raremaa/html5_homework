@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transition属性</title>
+    <style type="text/css">
+        .box{
+            width: 200px;
+            height: 200px;
+            background: blue;
+            margin: 0 auto;
+        }
+        .box:hover{
+            /*阴影*/
+            box-shadow: 8px 8px 10px 2px red;
+            /*不同浏览器的动画过渡时间*/
+            -webkit-transition-duration: 1s;
+            -moz-transition-duration: 1s;
+            -o-transition-duration: 1s;
+            /*动画先慢后开再慢过渡效果*/
+            -webkit-transition-timing-function: ease;
+            -moz-transition-timing-function: ease;
+            -o-transition-timing-function: ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
