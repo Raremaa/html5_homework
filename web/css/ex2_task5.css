@@ -1,0 +1,40 @@
+body{
+    background: black;
+}
+li{
+    width: 320px;
+    display: inline-block;
+    margin: 20px;
+    overflow: hidden;
+}
+img{
+    width: 300px;
+    height: 300px;
+    border:7px white solid;
+}
+div{
+    width: 315px;
+    height: 315px;
+    overflow: hidden;
+}
+h2{
+    color: white;
+    z-index: 999;
+
+}
+#img1:hover{
+    border-radius: 50%;
+    transition: linear 0.5s ;
+}
+#img2:hover{
+    transform: scale(4,4);
+    transition: ease-out 0.5s;
+}
+#img3:hover{
+    transform: skew(20deg);
+    transition: ease-in 1s;
+}
+#img4:hover{
+    opacity: 0.2;
+    transition: ease-in 1s;
+}
