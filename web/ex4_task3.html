@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        div{
+            position: relative;
+            margin: 0 auto;
+            width: 80%;
+            height: 460px;
+            background-color: rgba(222,185,135,0.4);
+        }
+        .bigVideo{
+            position: absolute;
+            width: 65%;
+            height: 460px;
+            margin-top: 3px;
+        }
+        div ul{
+            width: 35%;
+            height: 460px;
+            position: absolute;
+            margin-left: 760px;
+            float: right;
+            list-style: none;
+            margin-top: 0px;
+        }
+        .smallVideo{
+            margin-top: 11px;
+            width: 60%;
+            height: 138px;
+        }
+        li{
+            margin-top: 0px;
+        }
+        p{
+            width: 40%;
+            float: right;
+            display: inline-block;
+        }
+        #line{
+            float: left;
+            width: 1px;
+            margin-left: 795px;
+            height: 450px;
+            border: 2px solid skyblue;
+        }
+    </style>
+</head>
+<body>
+<div class="box" id="box">
+    <video class="bigVideo" src="video/Pexels%20Videos%204909.mp4" controls="controls" autoplay="autoplay"></video>
+    <div id="line"></div>
+    <ul>
+        <li id="v1" ><video class="smallVideo" src="video/Pexels%20Videos%204909.mp4"></video><p>美丽人生</p></li>
+        <li id="v2" ><video class="smallVideo" src="video/Pexels%20Videos%204820.mp4"></video><p>我们一路前行，不是为了改变世界</p></li>
+        <li id="v3" ><video class="smallVideo" src="video/Pexels%20Videos%204808.mp4"></video><p>幸福是要靠自己的双手去努力争取的</p></li>
+    </ul>
+</div>
+<script>
+    var video_big = document.getElementById("box").getElementsByTagName("video").item(0);
+    clickChangeVideo("v1");
+    clickChangeVideo("v2");
+    clickChangeVideo("v3");
+    function clickChangeVideo(domId) {
+        var li_temp = document.getElementById(domId);
+        li_temp.addEventListener("click",function () {
+            video_big.src = li_temp.getElementsByTagName("video").item(0).src;
+        });
+    }
+
+    // video_temp.click(function () {
+    //     video_big.src=video_temp.src;
+    // })
+</script>
+</body>
+</html>
